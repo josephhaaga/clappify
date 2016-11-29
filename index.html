@@ -1,0 +1,27 @@
+<html>
+
+
+	<body>
+
+		<h1>Clappify</h1>
+		<h2>Add 👏 some 👏 emphasis 👏 to 👏 your 👏 text</h2>
+		<input type="textarea" class="user-input" placeholder="Your 👏 text 👏 here"></input>
+		<br>
+		<button class="clap">Clappify</button>
+		<p class="output"></p>
+
+	</body>
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+	  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+	  crossorigin="anonymous"></script>
+
+	<script>
+		$('.clap').click(function(){
+			var input = $('.user-input').val();
+			input = input.replace(/ /g," 👏 ");
+			$('.output').html(input);
+		});
+	</script>
+
+</html>
